@@ -143,10 +143,9 @@ const rules = reactive({
         />
       </el-form-item>
     </div>
-
     <el-form-item>
-      <el-button @click="removeAccount(form.id)">
-        <el-icon><Delete /></el-icon>
+      <el-button class="delete-btn" type="text" @click="removeAccount(form.id)">
+        <el-icon :size="20"><Delete /></el-icon>
       </el-button>
     </el-form-item>
   </el-form>
@@ -170,5 +169,16 @@ const rules = reactive({
   display: flex;
   gap: 10px;
   width: 100%;
+}
+
+.delete-btn {
+  width: 40px;
+  padding: 0;
+  color: #909399;
+  transition: color 0.2s;
+}
+
+.delete-btn:hover {
+  color: #f56c6c;
 }
 </style>

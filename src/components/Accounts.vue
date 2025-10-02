@@ -39,7 +39,7 @@ const { accounts } = storeToRefs(store);
         <span>Пароль</span>
       </div>
 
-      <span style="width: 46px"></span>
+      <span style="width: 40px"></span>
     </div>
 
     <AccountForm
